@@ -1,0 +1,31 @@
+.btn-brick {
+    background-color: #b22222;
+    border-color: #b22222;
+}
+
+.btn-outline-brick {
+    color: #b22222;
+    border-color: #b22222;
+    transition: .3s ease-in-out;
+}
+
+.btn-outline-brick:hover {
+    color: #ffffff;
+    background-color: #b22222;
+}
+
+.btn-blue {
+    background-color: #043f98;
+    border-color: #043f98;
+}
+
+.btn-outline-blue {
+    color: #043f98;
+    border-color: #043f98;
+    transition: .3s ease-in-out;
+}
+
+.btn-outline-blue:hover {
+    color: #ffffff;
+    background-color: #043f98;
+}

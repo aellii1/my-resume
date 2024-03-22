@@ -1,0 +1,438 @@
+@media screen and (max-width: 768px) {
+
+    /* Heading styles */
+    .header h3 {
+        text-align: center;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: center;
+        margin-right: 35px; /* Adjust the margin for smaller screens */
+    }
+
+    .header li {
+        margin-right: -10px;
+    }
+    /* End of heading styles */
+
+    /* project */
+    .card {
+        width: 100%;
+    }
+
+    .card-info {
+        font-size: 14px; /* Decrease font size for card info on smaller screens */
+        max-width: 100%; /* Adjust max width for smaller screens */
+    }
+
+    .card-title {
+        font-size: 16px; /* Decrease font size for card title on smaller screens */
+    }
+
+    .card-description {
+        font-size: 12px; /* Decrease font size for card description on smaller screens */    
+    }
+
+    .card-img-top {
+        max-height: 200px; /* Reduce image height for smaller screens */
+    }
+    /* end of project styles */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADING STYLE */
+.header h3 {
+    cursor: default;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding: 5px;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.header li {
+    display: inline-block;
+}
+
+.header a {
+    color:  #555555;
+    font-weight: 500;
+    transition: .5s ease-in-out;
+}
+
+.header a:hover {
+    color:#808080;
+}
+
+.header a.active {
+    color: #111111; /* Change color for active link */
+    /* Add any other styling for active link */
+}
+
+/* Define the CSS class for the blur navbar */
+.blur-background {
+    background-color: rgba(255, 255, 255, 0.5); /* White background with opacity */
+    backdrop-filter: blur(5px); /* Apply blur effect to the background */
+    transition: background-color 1s ease-in-out, backdrop-filter 0.5s ease-in-out; /* Add transition for smooth effect */
+}
+
+.contact-blur-background {
+    background-color: rgba(0, 0, 0, 0.5); /* White background with opacity */
+    backdrop-filter: blur(5px); /* Apply blur effect to the background */
+    transition: background-color 1s ease-in-out, backdrop-filter 0.5s ease-in-out; /* Add transition for smooth effect */
+}
+
+/* END OF HEADING STYLE */
+
+
+/* HOME PAGE STYLE */
+.home-wrapper .home {
+    background-image: url('../img/home-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: .3px solid #808080;
+    background-color: #808080;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in;
+}
+
+.home-heading h4 {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+    color: #111111;
+}
+
+.home-heading h4::before {
+    content: '';
+    display: inline-block; /* Display as a block-level element */
+    width: 3rem; /* Adjust the width as needed */
+    height: 5px; /* Adjust the height as needed */
+    background-color: #111111; /* Adjust the color as needed */
+    margin-bottom: 10px; /* Adjust the spacing below the line as needed */
+}
+
+.home-wrapper p {
+    font-family: "Open Sans", Arial, sans-serif;;
+    font-size: 22px;
+    margin: 1px;
+    padding: 1px;
+}
+
+.home-wrapper .about-btn {
+    padding: 10px;
+}
+
+.home-items {
+    padding: 0 0 0 15px;
+    margin: 0;
+    list-style-type: none;
+    cursor: default;
+}
+
+.home-item {
+    display: inline-block;
+    margin-right: 5px; /* Add more space between icons */
+}
+
+.home-item a {
+    color: #111111;
+    font-size: 18px;
+}
+/* END OF HOME PAGE STYLE */
+
+/* ABOUT PAGE STYLE */
+.about-wrapper .container-fluid, .about {
+    padding: 0;
+}
+
+.about-wrapper {
+    transition: .5s ease-in;
+    border-bottom: .5px solid #808080;
+}
+
+
+.about-content {
+    background-image: url(../img/about-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 20px; /* Adjust padding for smaller screens */
+}
+
+.about-content h4 {
+    font-weight: 700;
+}
+
+.about-content p {
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* END OF ABOUT PAGE STYLE */
+
+/* SKILL PAGE STYLE */
+.skill-wrapper .container-fluid, .skill {
+    padding: 0;
+}
+
+.skill-wrapper {
+    background-image: url(../img/skill-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: .5px solid #808080;
+}
+
+.bar-graph {
+    padding: 100px;
+}
+
+.bar-graph-heading h3 {
+    font-weight: 700;
+}
+
+.bar-graph .row {
+    padding-top: 10px;
+}
+
+.skill-paragraph .about-me {
+    font-weight: 500;
+}
+
+.skill-paragraph p {
+    display: block;
+    font-style: italic;
+}
+
+@keyframes progress-animation {
+    from {width: 0;}
+}
+
+.progress-bar {
+    animation: progress-animation 1s ease-in-out;
+}
+/* END OF PAGE STYLE */
+
+/* WORK PAGE */
+.work-wrapper .container-fluid, .work {
+    padding: 0;
+}
+
+.work-wrapper {
+    background-image: url(../img/work-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 50px;
+    border-bottom: .5px solid #808080;
+}
+
+.work-heading {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.work-heading h3 {
+    font-weight: 700;
+    margin: 30px 0 0 0;
+}
+
+.project-description {
+    font-weight: 500;
+    font-style: italic;
+    display: block;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    width: 90%; /* Set the card width to be 90% of its parent container */
+    margin: 0 auto; /* Center the card horizontally */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 90%; /* Limit max width to prevent overflow */
+}
+
+.card:hover .card-info {
+    opacity: 1;
+}
+
+.card-info-content {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    max-width: 100%; /* Ensure title doesn't overflow */
+    word-wrap: break-word; /* Allow words to break and wrap */
+}
+
+.card-description {
+    font-size: 14px;
+    max-width: 100%; /* Ensure description doesn't overflow */
+    word-wrap: break-word; /* Allow words to break and wrap */
+}
+
+.card-img-top {
+    width: 100%; /* Ensure image fills card width */
+    max-height: 280px; /* Set maximum height for image */
+    object-fit: cover; /* Maintain aspect ratio and crop if necessary */
+    margin: 0 auto;
+}
+/* END OF WORK PAGE */
+
+/* CONTACT PAGE STYLE */
+.contact-wrapper .container-fluid, .contact {
+    padding: 0;
+}
+
+.contact-wrapper {
+    background-image: url(../img/contact-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.contact-heading {
+    padding-top: 80px;
+    text-align: center;
+}
+
+.contact-content input[type="text"],
+.contact-content input[type="email"],
+.contact-content input[type="number"],
+.contact-content textarea,
+.contact-content .form-control {
+    background: none;
+    background-color: transparent; /* Remove background color */
+    border: none;
+    outline: none;
+}
+
+.contact-content input[type="text"],
+.contact-content input[type="email"],
+.contact-content input[type="number"],
+.contact-content textarea {
+    border-bottom: .5px solid #555555;
+    font-weight: 500;
+    width: 100%;
+    padding: 15.5px;
+    color: #fff;
+}
+
+.contact-content input[type="number"]::-webkit-inner-spin-button,
+.contact-content input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* Optional - remove the margin for Firefox */
+}
+.contact-content input[type="number"] {
+    -moz-appearance: textfield; /* Optional - for Firefox */
+}
+
+.contact-content textarea {
+    height: 10rem;
+}
+
+.my-info {
+    justify-content: left;
+}
+
+.info-text {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.contact-items {
+    padding: 0 0 0 1px;
+    margin: 0;
+    list-style-type: none;
+    cursor: default;
+}
+
+.contact-item {
+    display: inline-block;
+    margin-right: 5px; /* Add more space between icons */
+}
+
+.contact-item a {
+    color: #111111;
+    font-size: 18px;
+}
+
+.contact-item a:hover {
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.contact-btn {
+    padding-top: 115px;
+}
+/* END OF CONTACT PAGE */
+
+/* BACK TO TOP BUTTON */
+#back-to-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #b22222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* Style for the back to top button when hovered */
+  #back-to-top-btn:hover {
+    background-color: #6d0f0f;
+  }
+/* END OF BACK TO TOP BUTTON */
